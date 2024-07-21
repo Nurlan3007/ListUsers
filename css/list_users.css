@@ -1,0 +1,90 @@
+
+body{
+    font-family: system-ui;
+}
+
+nav{
+    margin: 20px 0;
+}
+
+nav a{
+    background: #7e96ec;
+    color:#fff;
+    padding: 8px 15px;
+    border-radius: 15px;
+    transition: ease 0.8s;
+}
+
+nav a:hover{
+    background: #5773e3;
+}
+
+.list_users{
+    padding: 20px;
+    box-shadow: 10px 10px 10px 10px #ccc;
+}
+
+.search_users{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.search_users input{
+    padding: 10px;
+    border:0;
+    outline: none;
+    border-radius: 20px;
+    background: #7e96ec;
+    font-size: 18px;
+    width: 100%;
+}
+
+.search_users input:focus{
+    background: #cbd4f5;
+}
+
+
+.search_users input::placeholder{
+    font-family: system-ui;
+    color: #f3f0f0;
+}
+
+.search_users img{
+    width: 60px;
+    position: absolute;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td,th{
+    padding: 10px;
+}
+
+thead tr{
+    background: #7e96ec;
+}
+thead tr th{
+    color:#ffffff;
+    padding:10px;
+    text-align: left;
+}
+
+tbody{
+    text-align: left;
+    padding:10px;
+}
+
+tbody td{
+    padding:10px;
+    border-bottom: 2px solid #7e96ec;
+}
+
+.edit{
+    color:green;
+}
+
+.delete{
+    color:red;
+}
