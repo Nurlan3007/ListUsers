@@ -1,11 +1,17 @@
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    font-family: system-ui;
+}
+
+h1, a{
+    color:#000;
 }
 
 .form{
+    margin: 30px;
     box-shadow: 10px 10px 10px 10px #ccc;
     width: 500px;
     padding:80px 54px;
@@ -81,4 +87,6 @@ input::placeholder{
 }
 
 
-
+.errors{
+    color:red;
+}

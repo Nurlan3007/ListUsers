@@ -1,3 +1,7 @@
+<?php
+session_start();
+
+?>
 <!doctype html>
 <html lang="en-ru">
 <head>
@@ -12,6 +16,12 @@
 <body>
     <form action="../logics/add_accounts.php" method="post" class="form" autocomplete="off">
         <h1 class="form_title">Add Account</h1>
+        <?php
+            if(isset($_SESSION['errors'])) {
+                foreach ($_SESSION['errors'] as $error)
+                    echo "<p class='errors'>$error</p><br>";
+            }
+        ?>
         <div class="form_group">
             <input type="text" class="form_input" placeholder="First Name" name="first_name">
         </div>
@@ -33,7 +43,7 @@
             <input type="text" class="form_input phone" placeholder="Phone 3" name="phone3">
         </div>
         <button class="form_button" type="submit">Add</button>
-
     </form>
+    <?php unset($_SESSION['errors']); ?>
 </body>
 </html>

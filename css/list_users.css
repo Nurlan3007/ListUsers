@@ -24,7 +24,10 @@ nav a:hover{
     box-shadow: 10px 10px 10px 10px #ccc;
 }
 
+
+
 .search_users{
+    width: 91%;
     margin-bottom: 20px;
     position: relative;
 }
@@ -65,6 +68,7 @@ td,th{
 thead tr{
     background: #7e96ec;
 }
+
 thead tr th{
     color:#ffffff;
     padding:10px;
@@ -81,6 +85,10 @@ tbody td{
     border-bottom: 2px solid #7e96ec;
 }
 
+thead th.reversed{
+    background:#fff;
+}
+
 .edit{
     color:green;
 }
@@ -88,3 +96,19 @@ tbody td{
 .delete{
     color:red;
 }
+
+.pagination{
+    margin:30px 0;
+}
+
+.pagination a{
+    font-weight: 900;
+    background:#7e96ec;
+    color:#fff;
+    padding: 10px 20px;
+}
+
+.pagination a:hover{
+    background: #a0b1ec;
+}
+

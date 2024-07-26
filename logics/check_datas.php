@@ -26,7 +26,6 @@ class check_datas{
         if(!preg_match($p, $this -> email,$m)){
             return "Incorrect email";
         }
-        return True;
     }
 
     public function check_unique_email(){
@@ -38,7 +37,6 @@ class check_datas{
         if($email['count_email'] > 0){
             return "Email already exist";
         }
-        return True;
     }
 
     public function check_last_name_first_name(){
@@ -50,12 +48,9 @@ class check_datas{
             $error .= " Incorrect last name";
         }
         if(strlen($error) > 0) return $error;
-        return True;
     }
 
-    public function check_position(){
-
-    }
+    public function check_position(){}
 
     public function check_phones(){
         foreach ($this->phones as $phone){
@@ -66,7 +61,6 @@ class check_datas{
                 }
             }
         }
-        return True;
     }
 }
 
